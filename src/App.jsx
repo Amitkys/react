@@ -19,8 +19,12 @@ function Count({count}){
 function Button(){
   return(
     <div>
-    <button>increase</button>
-    <button>decrease</button>
+    <button onClick={() => {
+
+    }}>increase</button>
+    <button onClick={() => {
+      
+    }}>decrease</button>
     </div>
     
   )
