@@ -17,9 +17,15 @@ function App() {
 function Count({count, setCount}){
   return(
     <di>
-      <h1>{count}</h1>
+      <CounteRenderer count = {count}></CounteRenderer>
      <Button count={count} setCount = {setCount}></Button>   
     </di>
+  )
+}
+
+function CounteRenderer({count}){
+  return(
+    <h1>{count}</h1>
   )
 }
 
