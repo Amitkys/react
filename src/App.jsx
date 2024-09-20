@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-
+// in this app use have to understand prop drilling problme
+// here you can saw:
+//count component does not use 'setCount' it's taking it and passing
+// into button component, that's why this is a problem, we have to fix it.
 function App() {
   const [count, setCount] = useState(0);
   return(
@@ -15,7 +18,7 @@ function Count({count, setCount}){
   return(
     <di>
       <h1>{count}</h1>
-     <Button count={count} setCount = {setCount}></Button>
+     <Button count={count} setCount = {setCount}></Button>   
     </di>
   )
 }
