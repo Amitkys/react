@@ -6,16 +6,16 @@ function App() {
   return(
     <div>
 
-     <Count count={count}></Count>
-     <Button count={count} setCount = {setCount}></Button>
+     <Count count={count} setCount = {setCount}></Count>
     </div>
   )
 }
 
-function Count({count}){
+function Count({count, setCount}){
   return(
     <di>
       <h1>{count}</h1>
+     <Button count={count} setCount = {setCount}></Button>
     </di>
   )
 }
