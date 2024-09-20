@@ -6,13 +6,14 @@ import { CountContext } from "./context";
 //count component does not use 'setCount' it's taking it and passing
 // into button component, that's why this is a problem, we have to fix it.
 function App() {
-  <CountContext.Provider value={count}>
+  
     const [count, setCount] = useState(0);
-  </CountContext.Provider>
+
   return(
     <div>
-
-     <Count  setCount = {setCount}></Count>
+      <CountContext.Provider value={count}>
+      <Count  setCount = {setCount}></Count>
+     </CountContext.Provider>
     </div>
   )
 }
@@ -37,7 +38,7 @@ function Button({ setCount}){
   const count = useContext(CountContext);
   return(
     <div>
-      <button onClick={() =>{
+      <button onClick={() => {
          setCount(count + 1);
       } }>increase</button>  
       <button onClick={() => {
