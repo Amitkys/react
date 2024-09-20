@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { CountContext } from "./context";
 
 // in this app use have to understand prop drilling problme
@@ -12,7 +12,7 @@ function App() {
   return(
     <div>
 
-     <Count count={count} setCount = {setCount}></Count>
+     <Count  setCount = {setCount}></Count>
     </div>
   )
 }
@@ -27,14 +27,14 @@ function Count({ setCount}){
 }
 
 function CounteRenderer(){
-  const count = 1;
+  const count = useContext(CountContext);
   return(
     <h1>{count}</h1>
   )
 }
 
-function Button({count, setCount}){
-  const count = 1;
+function Button({ setCount}){
+  const count = useContext(CountContext);
   return(
     <div>
       <button onClick={() =>{
