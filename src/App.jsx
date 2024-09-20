@@ -5,7 +5,7 @@ function App() {
     <div>
 
       <h1>
-        Hello World this is amit kys
+        Hello World this is amit 
       </h1>
     </div>
   )
