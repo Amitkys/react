@@ -6,18 +6,31 @@ function App() {
   return(
     <div>
 
-     <Count></Count>
+     <Count count={count}></Count>
      <Button></Button>
     </div>
   )
 }
 
-function Count(){
-
+function Count({count}){
+  return(
+    <di>
+      <h1>{count}</h1>
+    </di>
+  )
 }
 
 function Button(){
+  return(
+    <div>
+      <button onClick={() =>{
 
+      } }>increase</button>  
+      <button onClick={() => {
+        
+      }}>decrement</button>
+    </div>
+  )
 }
 
 export default App;
