@@ -19,11 +19,14 @@ function App() {
 }
 
 function Count({ setCount}){
+    // problew with context API 
+    // it re render (it not have any use);
+    console.log('count rendered'); 
   return(
-    <di>
+    <div>
       <CounteRenderer></CounteRenderer>
      <Button setCount = {setCount}></Button>   
-    </di>
+    </div>
   )
 }
 
