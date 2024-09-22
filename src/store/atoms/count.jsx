@@ -6,3 +6,4 @@ export const countAtom = atom({
     default: 0
 });
 
+// selector
