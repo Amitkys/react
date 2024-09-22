@@ -1,4 +1,4 @@
-import { atom } from "recoil"
+import { atom, selector } from "recoil"
 
 export const todoAtom = atom({
     key: "todoAtom",
@@ -7,4 +7,9 @@ export const todoAtom = atom({
         description: 'demo description'
     }]
 });
+
+export const filterTodo = selector({
+    key: "filterTodo",
+    get: 
+})
 
