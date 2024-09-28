@@ -1,8 +1,9 @@
 
-function App(){
+
+function App() {
   return (
     <div>
-      <h1>this is main page</h1>
+      <h1>This is main page</h1>
     </div>
   )
 }
