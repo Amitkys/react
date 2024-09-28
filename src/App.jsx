@@ -1,20 +1,8 @@
-import {  RecoilRoot, useRecoilValue } from "recoil";
-import { todoFamily } from "./atom";
 
-function App() {
+function App(){
   return (
-    <RecoilRoot>
-      <Todo id={1} />
-    </RecoilRoot>
-  )
-
-}
-function Todo({id}) {
-  const todos = useRecoilValue(todoFamily(id))
-  return(
     <div>
-      <h1>{todos.title}</h1>
-      <h2>{todos.description}</h2>
+      <h1>this is main page</h1>
     </div>
   )
 }
