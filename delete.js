@@ -1,11 +1,3 @@
+import axios from "axios";
 
-
-function App() {
-    return(
-        <div>
-            <h1>This is main page</h1>
-        </div>
-    )
-}
-
-export default App;
+axios.get('https://backend-ddtz.onrender.com/notification').then((res) => console.log(res.data))
